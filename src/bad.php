@@ -1,4 +1,7 @@
 <?php
 
-class Foo {
+namespace Foo;
+
+class Foo
+{
 }
