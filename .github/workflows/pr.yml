@@ -23,4 +23,4 @@ jobs:
         run: composer install --no-dev
 
       - name: Run test
-        run: phpunit tests
+        run: phpunit --bootstrap ./vendor/autoload.php tests
