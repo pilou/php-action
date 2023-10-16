@@ -18,5 +18,8 @@ jobs:
       - name: Run phpcs
         run: phpcs -q --standard=PSR12 --report=checkstyle src | cs2pr
 
+      - name: Install dependencies
+        run: composer install --no-dev
+
       - name: Run test
         run: phpunit tests
