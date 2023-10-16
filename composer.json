@@ -1,0 +1,11 @@
+{
+  "autoload": {
+    "psr-4": {"PhpAction\\": "src/"}
+  },
+  "autoload-dev": {
+    "psr-4": { "PhpAction\\": "tests/"}
+  },
+  "require": {
+    "phpunit/phpunit": "10.4.1"
+  }
+}

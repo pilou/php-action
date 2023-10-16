@@ -1,6 +1,6 @@
 <?php
 
-namespace Foo;
+namespace PhpAction;
 
 class Foo
 {
