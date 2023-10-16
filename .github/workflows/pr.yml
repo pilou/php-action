@@ -19,4 +19,4 @@ jobs:
         run: phpcs -q --standard=PSR12 --report=checkstyle src | cs2pr
 
       - name: Run test
-        run: ./vendor/bin/phpunit tests
+        run: phpunit tests
