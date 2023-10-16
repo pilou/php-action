@@ -10,6 +10,6 @@ class FooTest extends TestCase
     {
         $foo = new Foo();
 
-        $this->assertNull($foo);
+        $this->assertNotNull($foo);
     }
 }
