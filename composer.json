@@ -1,4 +1,5 @@
 {
+  "name": "pilou/phpaction",
   "autoload": {
     "psr-4": {"PhpAction\\": "src/"}
   },
