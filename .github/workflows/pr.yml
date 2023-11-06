@@ -23,3 +23,8 @@ jobs:
 
       - name: Run test
         run: phpunit --bootstrap ./vendor/autoload.php tests
+
+      - name: Publish Package to Private Packagist
+        run: composer config --global --auth http-basic.repo.packagist.com ${{ vars.PACKAGIST_USERNAME  }} ${{ secrets.PACKAGIST_API_TOKEN }} && composer update --lock
+        env:
+          COMPOSER_AUTH: '{"http-basic": {"repo.packagist.com": {"username": "${{ vars.PACKAGIST_USERNAME  }}", "password": "${{ secrets.PACKAGIST_API_TOKEN }}"}}}'
